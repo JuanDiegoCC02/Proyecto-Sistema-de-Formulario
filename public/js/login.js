@@ -7,10 +7,8 @@ const users = {
     "Admin": "444",
     "Student": "333"
 }
-
-
 registrar.addEventListener("click", function(){
-    postUsers(username.value, password.value)
+    postUsers(users)
 
 })
     

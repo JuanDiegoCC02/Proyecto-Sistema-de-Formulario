@@ -1,6 +1,39 @@
 {
   "users": [
-    
+    {
+      "id": "8554",
+      "username": "Admin",
+      "password": "444"
+    },
+    {
+      "id": "8f3a",
+      "username": "Student",
+      "password": "333"
+    }
   ],
-  "estadisticas": []
+  "estadisticas": [
+    {
+      "id": "5c21",
+      "idEstudiante": "JDiego",
+      "idCompu": "008",
+      "fechaSalida": "2025-02-25",
+      "fechaRegreso": "2025-02-26"
+    },
+    {
+      "id": "096d",
+      "idEstudiante": "JDiego",
+      "idCompu": "009",
+      "sede": "sanJose",
+      "fechaSalida": "2025-02-25",
+      "fechaRegreso": "2025-02-26"
+    },
+    {
+      "id": "51a3",
+      "idEstudiante": "Admin",
+      "idCompu": "000",
+      "sede": "sanJose",
+      "fechaSalida": "2025-02-25",
+      "fechaRegreso": "2025-02-26"
+    }
+  ]
 }
