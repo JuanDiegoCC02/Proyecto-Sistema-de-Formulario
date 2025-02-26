@@ -27,28 +27,20 @@ e.preventDefault()
     await postUsers(estadisticas,"estadisticas")
 })
 
-/*
+
 async function mostrarUsuariosFunc(){
 
-const datosUser = await getUsers ()
+const datosUser = await getUsers ("users")
 
 console.log(datosUser);
 
 for (let index = 0; index < datosUser.length; index++) {
-    
     let p = document.createElement("p")
     p.innerText = datosUser[index].users
-    mostrarUsuarios.appenChild(p)
+    mostrarUsuarios.appendChild(p)
 
-}
+} 
 
 }
  mostrarUsuariosFunc() 
 
-async function mostrarFormulariosFunc(){
-    const  datosForm = await getUsers ()
-    console.log(datosForm);
-    
-}
-mostrarFormulariosFunc()
-*/

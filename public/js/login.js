@@ -2,27 +2,17 @@ import { postUsers } from "../Services/llamados.js"
 const username = document.getElementById("username")
 const password = document.getElementById("password")
 const registrar = document.getElementById("registrar")
+const sede = document.getElementById("sede")
 
-const users = {
-    "Admin": "444",
-    "Student": "333"
-}
-registrar.addEventListener("click", function(){
-    postUsers(users)
+registrar.addEventListener("click", function(e){
+    e.preventDefault()
+    const users = {
+        "nombreUsuario": username.value,
+        "claveUsuario": password.value,
+        "tipoUsuario": "estudiante",
+        "sede":sede.value,
+    }
+    postUsers(users,"users")
+    window.location.href = "signin.html"
 
 })
-    
-
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita que el formulario se envíe automáticamente
-
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    if (users[username] && users[username] === password) {
-        alert('Inicio de sesión exitoso')
-        window.location.href = 'pagPrincipal.html'; 
-    } else {
-        alert('ERROR! Nombre de usuario o contraseña incorrectos');
-    }
-});

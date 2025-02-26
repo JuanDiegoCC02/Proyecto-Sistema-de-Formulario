@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pag. Admin</title>
+    <link rel="stylesheet" href="js/pagAdmin.js">
+</head>
+<body>
+    
+
+    <header>
+        <h1> FORWARD Permisos </h1>
+    </header>
+    
+    <main>
+        <h2>Formulario para el Retiro del Computador</h2>
+    
+    <div>
+        <label for="">ID Estudiante: </label> <br>
+        <input id="idEstudiante" type="text">
+    </div><br>
+    
+    <div>
+        <label for="">ID Computadora</label> <br>
+        <input id="idCompu" type="text">
+    </div><br>
+    
+    
+    
+    <div>
+        <label for="">Fecha Salida:</label><br>
+        <input id="fechaSalida" type="date"> <br>
+    
+        <label for="">Fecha Regreso:</label><br>
+        <input id="fechaRegreso" type="date">
+    </div><br>
+    
+    <div>
+        <select  id="sede">
+            <option value="">Sede</option>
+            <option value="sanJose">San Jose</option>
+            <option value="puntarenas">Puntarenas</option>
+        </select> 
+    </div><br>
+    
+    <div>
+    <input id="enviar" type="button" value="Enviar"> 
+    </div><br>
+    
+    <div>
+        <label for="">Acepta los terminos y condiciones</label>
+        <input id="checkbox" type="checkbox">
+    </div><br>
+    </main>
+    
+    <aside>
+        <div>
+    <h3>Registro de los Usuarios</h3>
+
+    <div id="mostrarUsuarios" ></div>
+    </div>
+    <div>
+    <h3>Registro de los Formularios</h3>
+
+    <div id="mostrarFormularios" ></div>
+    </div>
+
+    <div>
+        <h4>Formularios Aceptados</h4>
+        <div id="formAceptados"></div>
+
+
+        <h4>Formualrios Denegados</h4>
+        <div id="formDenegados"></div>
+
+
+    </div>
+
+    </aside>
+
+</body>
+<script type="module" src="js/pagAdmin.js"></script>
+</html>

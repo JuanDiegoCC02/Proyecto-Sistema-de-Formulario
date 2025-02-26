@@ -1,38 +1,56 @@
 {
   "users": [
     {
-      "id": "8554",
-      "username": "Admin",
-      "password": "444"
+      "id": "9feb",
+      "nombreUsuario": "Pepe",
+      "claveUsuario": "1234",
+      "tipoUsuario": "estudiante",
+      "sede": "Desamparados"
     },
     {
-      "id": "8f3a",
-      "username": "Student",
-      "password": "333"
+      "id": "0",
+      "nombreUsuario": "JD",
+      "claveUsuario": "4321",
+      "tipoUsuario": "admin"
+    },
+    {
+      "id": "83ff",
+      "nombreUsuario": "Admin",
+      "claveUsuario": "4321",
+      "tipoUsuario": "estudiante",
+      "sede": ""
+    },
+    {
+      "id": "929f",
+      "nombreUsuario": "J",
+      "claveUsuario": "333",
+      "tipoUsuario": "estudiante",
+      "sede": "Desamparados"
     }
   ],
   "estadisticas": [
     {
-      "id": "5c21",
+      "id": "3da6",
       "idEstudiante": "JDiego",
-      "idCompu": "008",
-      "fechaSalida": "2025-02-25",
-      "fechaRegreso": "2025-02-26"
+      "idCompu": "001",
+      "sede": "sanJose",
+      "fechaSalida": "2025-02-26",
+      "fechaRegreso": "2025-02-27"
     },
     {
-      "id": "096d",
+      "id": "2d00",
       "idEstudiante": "JDiego",
-      "idCompu": "009",
+      "idCompu": "001",
       "sede": "sanJose",
-      "fechaSalida": "2025-02-25",
-      "fechaRegreso": "2025-02-26"
+      "fechaSalida": "2025-02-26",
+      "fechaRegreso": "2025-02-27"
     },
     {
-      "id": "51a3",
-      "idEstudiante": "Admin",
-      "idCompu": "000",
+      "id": "64b9",
+      "idEstudiante": "JDiegoCC",
+      "idCompu": "0001",
       "sede": "sanJose",
-      "fechaSalida": "2025-02-25",
+      "fechaSalida": "2025-02-27",
       "fechaRegreso": "2025-02-26"
     }
   ]

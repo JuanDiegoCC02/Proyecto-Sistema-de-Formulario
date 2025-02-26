@@ -1,6 +1,6 @@
-async function getUsers() {
+async function getUsers(endpoint) {
     try {
-        const response = await fetch('http://localhost:3000/users', {
+        const response = await fetch(`http://localhost:3000/${endpoint}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -27,7 +27,7 @@ async function postUsers(obj,endpoint) {
     try {
      
                             //Ajuste de endpoint para lafuncion de llamados
-        const response = await fetch(`http://localhost:3000/${endpoint}`, {
+        const response = await fetch(`http://localhost:3000/${endpoint}`,{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -52,15 +52,13 @@ export{postUsers}
 
 async function updateUsers(obj,endpoint) {
     try {
-     
-        
 
-        const response = await fetch(`http://localhost:3000/users/${endpoint}`+id, {
+        const response = await fetch(`http://localhost:3000/${endpoint}/`+id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(userData)
+            body: JSON.stringify(obj)
         });
 
      
@@ -78,9 +76,9 @@ export{updateUsers}
 //////////////LLAMADO DELETE/////////////
 
 
-async function deleteUser(id) {
+async function deleteUser(endpoint,id) {
     try {
-        const response = await fetch(`http://localhost:3000/users/${endpoint},${id}`, {
+        const response = await fetch(`http://localhost:3000/${endpoint}/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

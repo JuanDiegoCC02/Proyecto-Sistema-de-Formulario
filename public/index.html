@@ -3,30 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log In</title>
+    <link rel="stylesheet" href="Style/login.css">
 </head>
 <body>
-    <header>
-    <h1>Formulario para Computadoras </h1>
+    <header> 
+        
+    <h1>FORWARD </h1> 
+    <h2>Registro Formulario de Computadoras</h2> <br>
+
     </header>
 
+    <h3>Registrate</h3>
 
-    <h3>Log In </h3>
+
+
      <!--  Conexion de HTML  <a href="pagPrincipal.html">name enlace</a>-->
-       <form id="loginForm">
+       <form>
+
     <div>
     <label for="">Username: </label> <br>
     <input id="username" type="text"> 
     </div> <br>
     <div>
-    <label for="">Contraseña:</label> <br>
+    <label for="">Password:</label> <br>
     <input id="password" type="password">
     </div><br>
+    <label for="">Sede:</label> <br>
+    <select id="sede">
+        <option value="" selected disabled>Elija la Sede</option>
+        <option value="Puntarenas">Puntarenas</option>
+        <option value="Desamparados">Desampakistán</option>
+    </select> 
+    
+    <br>
+    <br>
 
+    </div>
     <input id="registrar" type="submit" value="Registrar">
     </form>
+ 
+    <br>
+<aside>
+    <a href="signin.html">Sign In</a>
 
+</aside>
 
+    
     </body>
     <script type="module" src="js/login.js"></script>
     </html>
