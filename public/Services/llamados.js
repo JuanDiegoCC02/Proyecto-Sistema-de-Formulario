@@ -71,6 +71,27 @@ async function updateUsers(obj,endpoint) {
 
 export{updateUsers}
 
+async function patchData(obj,endpoint) {
+    try {
+
+        const response = await fetch(`http://localhost:3000/${endpoint}/`+id, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(obj)
+        });
+
+     
+        return await response.json();
+    } catch (error) {
+        console.error('Error update user:', error);
+        throw error;
+    }
+}
+
+export{patchData}
+
 
 
 //////////////LLAMADO DELETE/////////////

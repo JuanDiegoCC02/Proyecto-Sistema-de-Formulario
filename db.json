@@ -1,57 +1,54 @@
 {
   "users": [
     {
-      "id": "9feb",
-      "nombreUsuario": "Pepe",
-      "claveUsuario": "1234",
-      "tipoUsuario": "estudiante",
-      "sede": "Desamparados"
-    },
-    {
       "id": "0",
       "nombreUsuario": "JD",
-      "claveUsuario": "4321",
+      "claveUsuario": "444",
       "tipoUsuario": "admin"
     },
     {
-      "id": "83ff",
-      "nombreUsuario": "Admin",
-      "claveUsuario": "4321",
-      "tipoUsuario": "estudiante",
-      "sede": ""
-    },
-    {
-      "id": "929f",
-      "nombreUsuario": "J",
-      "claveUsuario": "333",
+      "id": "7a84",
+      "nombreUsuario": "Student",
+      "claveUsuario": "001",
       "tipoUsuario": "estudiante",
       "sede": "Desamparados"
+    },
+    {
+      "id": "04c2",
+      "nombreUsuario": "Tiburoncin",
+      "claveUsuario": "000",
+      "tipoUsuario": "estudiante",
+      "sede": "Puntarenas"
     }
   ],
   "estadisticas": [
     {
-      "id": "3da6",
-      "idEstudiante": "JDiego",
-      "idCompu": "001",
-      "sede": "sanJose",
-      "fechaSalida": "2025-02-26",
-      "fechaRegreso": "2025-02-27"
-    },
-    {
-      "id": "2d00",
-      "idEstudiante": "JDiego",
-      "idCompu": "001",
-      "sede": "sanJose",
-      "fechaSalida": "2025-02-26",
-      "fechaRegreso": "2025-02-27"
-    },
-    {
-      "id": "64b9",
-      "idEstudiante": "JDiegoCC",
-      "idCompu": "0001",
-      "sede": "sanJose",
+      "id": "b4b9",
+      "idEstudiante": "JDiego CorellaCamacho",
+      "idCompu": "0000",
+      "sede": "San Jose",
       "fechaSalida": "2025-02-27",
-      "fechaRegreso": "2025-02-26"
+      "fechaRegreso": "2025-02-28",
+      "estado": false
+    },
+    {
+      "id": "de54",
+      "idEstudiante": "Tiburoncin",
+      "idCompu": "001",
+      "sede": "Puntarenas",
+      "fechaSalida": "2025-02-27",
+      "fechaRegreso": "2025-02-28",
+      "estado": false
+    },
+    {
+      "id": "1b2d",
+      "idEstudiante": "Fer",
+      "idCompu": "014",
+      "sede": "San Jose",
+      "fechaSalida": "2025-02-27",
+      "fechaRegreso": "2025-02-28",
+      "estado": false
+      
     }
   ]
 }
