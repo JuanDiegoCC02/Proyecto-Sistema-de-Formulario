@@ -5,6 +5,7 @@
     const sede = document.getElementById("sede")
     const fechaSalida = document.getElementById("fechaSalida")
     const fechaRegreso = document.getElementById("fechaRegreso")
+    
     const enviar = document.getElementById("enviar")
     const checkbox = document.getElementById("checkbox")
 
@@ -12,7 +13,9 @@
     const mostrarFormularios = document.getElementById("mostrarFormularios")
     const formAceptados = document.getElementById("formAceptados")
     const formNegados = document.getElementById("formNegados")
-/*
+
+
+/*          FUNCION DEL CAMBIO DE LISTAS CON LOCAL-STORAGE
     //almacena en el Local-Storage
      function saveState(){
         localStorage.setItem("formAceptados", formAceptados.innerHTML)
@@ -91,6 +94,8 @@
             let fSalida = document.createElement("p")
             let fRegreso = document.createElement("p")
             let formSd = document.createElement("p")
+            
+
             let btnAceptar = document.createElement("button")
             let btnNegar = document.createElement("button") 
         
@@ -99,21 +104,23 @@
             fSalida.innerText = datosForm[index].fechaSalida
             fRegreso.innerText = datosForm[index].fechaRegreso
             formSd.innerText = datosForm[index].sede
+            
+
             btnAceptar.innerText = "Aceptar"
             btnNegar.innerText = "Negar"
 
-            //Btn Aceptar Funcion   
 
-            
-            btnAceptar.addEventListener("click", function(){
-                const data1 ={}
-                formAceptados.appendChild(idEst)
-                formAceptados.appendChild(idComp)
-                formAceptados.appendChild(fSalida)
-                formAceptados.appendChild(fRegreso)
-                formAceptados.appendChild(formSd)
-                //saveState() 
-            })
+            //Btn Aceptar Funcion  
+            btnAceptar.addEventListener("click", async function(){
+                const actualizarForm =  await patchData( actualizarForm,`estadisticas/${datosForm[index].id}`)
+                    formAceptados.appendChild(idEst)
+                    formAceptados.appendChild(idComp)
+                    formAceptados.appendChild(fSalida)
+                    formAceptados.appendChild(fRegreso)
+                    formAceptados.appendChild(formSd)
+
+                
+        })
 
             //Btn Negar Funcion
             btnNegar.addEventListener("click", function(){
@@ -140,6 +147,7 @@
             mostrarFormularios.appendChild(fSalida)
             mostrarFormularios.appendChild(fRegreso)
             mostrarFormularios.appendChild(formSd)
+            mostrarFormularios.appendChild(status)
             
 
         
