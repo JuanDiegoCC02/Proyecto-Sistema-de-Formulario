@@ -48,13 +48,17 @@
       "fechaSalida": "2025-02-27",
       "fechaRegreso": "2025-02-28",
       "estado": false
-      
     }
   ],
   "formAceptados": [
-
+    {
+      "id": "73fb",
+      "idEstudiante": "",
+      "idCompu": "",
+      "sede": "",
+      "fechaSalida": "",
+      "fechaRegreso": ""
+    }
   ],
-  "formNegados": [
-    
-  ]
+  "formNegados": []
 }

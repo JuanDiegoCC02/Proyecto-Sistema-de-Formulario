@@ -32,7 +32,7 @@
     }
      */
 
-    // Funcion del click para enviar
+    // Funcion del click para enviar al db.json
     enviar.addEventListener("click", async function(e){   
     e.preventDefault()
 
@@ -44,7 +44,7 @@
             "sede": sede.value,
             "fechaSalida": fechaSalida.value,
             "fechaRegreso": fechaRegreso.value,
-            "estado": false
+            
     
     }
         await postUsers(estadisticas,"estadisticas")
@@ -110,17 +110,23 @@
             btnNegar.innerText = "Negar"
 
 
-            //Btn Aceptar Funcion  
-            btnAceptar.addEventListener("click", async function(){
-                const actualizarForm =  await patchData( actualizarForm,`estadisticas/${datosForm[index].id}`)
-                    formAceptados.appendChild(idEst)
-                    formAceptados.appendChild(idComp)
-                    formAceptados.appendChild(fSalida)
-                    formAceptados.appendChild(fRegreso)
-                    formAceptados.appendChild(formSd)
-
+            //Btn Aceptar Funcion  para mover con el post el contenido
+            btnAceptar.addEventListener("click", async function(e){
+                e.preventDefault()
+                const formAceptado = {
+                    "idEstudiante": idEstudiante.value,
+                    "idCompu": idCompu.value,
+                    "sede": sede.value,
+                    "fechaSalida": fechaSalida.value,
+                    "fechaRegreso": fechaRegreso.value,
+                    
+            
+            }
+                await postUsers( ,"formAceptados")
                 
-        })
+        
+            })
+                
 
             //Btn Negar Funcion
             btnNegar.addEventListener("click", function(){
@@ -147,7 +153,6 @@
             mostrarFormularios.appendChild(fSalida)
             mostrarFormularios.appendChild(fRegreso)
             mostrarFormularios.appendChild(formSd)
-            mostrarFormularios.appendChild(status)
             
 
         
