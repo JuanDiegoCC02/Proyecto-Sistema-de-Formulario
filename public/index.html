@@ -8,13 +8,14 @@
 </head>
 <body>
     <header> 
-        
-    <h1>FORWARD </h1> 
-    <h2>Registro Formulario de Computadoras</h2> <br>
-
+        <div class="titulosPrincipales">
+    <h1 class="tituloForward" >FORWARD </h1> 
+    <h2 class="subTRegistro" >Formulario de Computadoras</h2> <br>
+        </div><br>
     </header>
 
-    <h3>Registrate</h3>
+    <div class="styleEstForm">
+    <h3  class="tituloReg">Registrate</h3>
 
 
 
@@ -26,7 +27,7 @@
     <input id="username" type="text"> 
     </div> <br>
 <div>
-    <label for="">Email</label> <br>
+    <label for="">Email:</label> <br>
     <input id="email" type="email">
 </div> <br>
 
@@ -38,16 +39,16 @@
     <select id="sede">
         <option value="" selected disabled>Seleccione la Sede</option>
         <option value="Puntarenas">Puntarenas</option>
-        <option value="Desamparados">Desampakistán</option>
-    </select> 
+        <option value="Desamparados">Desamparados</option>
+    </select>  <br> <br>
     
-    <br>
-    <br>
-
+     <div class="btnEnviar">
+    <input  id="registrar" type="submit" value="Registrar">
+</div>
     </div>
-    <input id="registrar" type="submit" value="Registrar">
+   
     </form>
- 
+</div>
     <br>
 <aside>
     <div>
@@ -61,5 +62,6 @@
 
     
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="js/login.js"></script>
     </html>

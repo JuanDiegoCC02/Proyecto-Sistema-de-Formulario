@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(11, 102, 105);
+    font-style: italic;
+    text-shadow: 2px 2px 5px rgb(5, 18, 73);
+    color: rgb(0, 0, 0);
+
+}
+.titulosPrincipales{
+border-style: ridge;
+border-width: 13px;
+border-color: rgb(3, 34, 44);
+padding: 17px; 
+background-color: rgba(10, 78, 87, 0.973);
+align-self: center;
+text-align: center;
+color: rgb(0, 0, 0);
+
+}
+.tituloForward{
+    border-color: rgb(25, 62, 92);
+    border-width: 8px;
+    background-color: rgba(25, 127, 141, 0.815);
+    border-style: outset;
+}
+.styleEstForm{
+    
+    width: 400px ;
+    height: 400px ;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    left: 34%;
+    
+    border-style:inset;
+    border-width: 9px;
+    border-color: rgb(20, 62, 82);
+    background-color: rgba(10, 78, 87, 0.973);
+}

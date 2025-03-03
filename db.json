@@ -4,6 +4,7 @@
       "id": "0",
       "nombreUsuario": "JD",
       "claveUsuario": "444",
+      "sede": " Desamparados",
       "tipoUsuario": "admin"
     },
     {
@@ -19,46 +20,42 @@
       "claveUsuario": "000",
       "tipoUsuario": "estudiante",
       "sede": "Puntarenas"
+    },
+    {
+      "id": "8e4b",
+      "nombreUsuario": "GD",
+      "claveUsuario": "666",
+      "tipoUsuario": "estudiante",
+      "sede": "Desamparados"
     }
   ],
   "estadisticas": [
     {
-      "id": "b4b9",
-      "idEstudiante": "JDiego CorellaCamacho",
-      "idCompu": "0000",
-      "sede": "San Jose",
-      "fechaSalida": "2025-02-27",
-      "fechaRegreso": "2025-02-28",
-      "estado": false
-    },
-    {
-      "id": "de54",
-      "idEstudiante": "Tiburoncin",
-      "idCompu": "001",
-      "sede": "Puntarenas",
-      "fechaSalida": "2025-02-27",
-      "fechaRegreso": "2025-02-28",
-      "estado": false
-    },
-    {
-      "id": "1b2d",
-      "idEstudiante": "Fer",
-      "idCompu": "014",
-      "sede": "San Jose",
-      "fechaSalida": "2025-02-27",
-      "fechaRegreso": "2025-02-28",
-      "estado": false
+      "id": "a9af",
+      "idEstudiante": "DF",
+      "idCompu": "009",
+      "sede": "sanJose",
+      "fechaSalida": "2025-03-03",
+      "fechaRegreso": "2025-03-05"
     }
   ],
   "formAceptados": [
     {
-      "id": "73fb",
-      "idEstudiante": "",
-      "idCompu": "",
-      "sede": "",
-      "fechaSalida": "",
-      "fechaRegreso": ""
+      "id": "920b",
+      "idEstudiante": "Student 01",
+      "idCompu": "002",
+      "sede": "San Jose",
+      "fechaSalida": "2025-02-28",
+      "fechaRegreso": "2025-03-03"
     }
   ],
-  "formNegados": []
+  "formNegados": [
+    {
+      "id": "966e",
+      "idEstudiante": "Tiburoncin",
+      "idCompu": "003",
+      "sede": "Puntarenas",
+      "fechaSalida": "2025-02-28",
+      "fechaRegreso": "2025-03-03"
+    }
 }

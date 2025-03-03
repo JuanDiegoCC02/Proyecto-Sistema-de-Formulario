@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pag. Admin</title>
-    <link rel="stylesheet" href="js/pagAdmin.js">
+    <link rel="stylesheet" href="Style/pagAdmin.css">
 </head>
 <body>
     
 
     <header>
-        <h1> FORWARD Permisos </h1>
+        <div class="titulosPrincipales">
+        <h1 class="tituloForward"> FORWARD </h1>
+        
+        </div><br>
     </header>
     
     <main>
-        <h2>Formulario para el Retiro del Computador</h2>
+        <div class="styleEstForm">
+        <h2>Formulario Permisos de Computadoras</h2>
     
     <div>
         <label for="">ID Estudiante: </label> <br>
@@ -22,7 +26,7 @@
     </div><br>
     
     <div>
-        <label for="">ID Computadora</label> <br>
+        <label for="">ID Computadora:</label> <br>
         <input id="idCompu" type="text">
     </div><br>
     
@@ -37,6 +41,7 @@
     </div><br>
     
     <div>
+        <label for="">Sede:</label><br>
         <select  id="sede">
             <option value="" selected disabled>Seleccione Sede</option>
             <option value="San Jose">San Jose</option>
@@ -47,38 +52,40 @@
     <div>
     <input id="enviar" type="button" value="Enviar"> 
     </div><br>
-    
+</div>
     <div>
         <label for="">Terminos y Condiciones</label>
         <input id="checkbox" type="checkbox">
-    </div><br>
+    </div> <br><br>
     </main>
     
     <aside>
-        <div>
-    <h3>Registro de los Usuarios</h3>
+        <div class="estrucUsuarios">
+    <h3  class="titulosRegs">Registro de los Usuarios</h3>
 
     <div id="mostrarUsuarios" ></div>
-    </div>
-    <div>
-    <h3>Registro de los Formularios</h3>
+    </div><br>
+
+        <div class="estrucForm"><br>
+    <h3 class="titulosRegs">Registro de los Formularios</h3>
 
     <div id="mostrarFormularios" ></div>
-    </div>
+    </div><br>
 
-    <div>
-        <h4>Formularios Aceptados</h4>
+        <div class="estrucFormA">
+        <h4 class="titulosRegs">Formularios Aceptados</h4>
         <div id="formAceptados"></div>
+        </div><br>
 
-
-        <h4>Formualrios Negados</h4>
+        <div class="estrucFormN">
+        <h4 class="titulosRegs">Formualrios Negados</h4>
         <div id="formNegados"></div>
-
-
-    </div>
+        </div>
+   
 
     </aside>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="module" src="js/pagAdmin.js"></script>
 </html>
